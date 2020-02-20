@@ -41,14 +41,15 @@ def Morze(word):
     print(result)
     return result
 frequency = 1000
-cont = Morze(input().lower())
-for s in cont:
-    for symbol in s:
-        if symbol == '.':
-            winsound.Beep(frequency, 100)
-        elif symbol == '-':
-            winsound.Beep(frequency, 700)
-    time.sleep(0.2)
+while True:
+    cont = Morze(input().lower())
+    for s in cont:
+        for symbol in s:
+            if symbol == '.':
+                winsound.Beep(frequency, 100)
+            elif symbol == '-':
+                winsound.Beep(frequency, 700)
+        time.sleep(0.2)
 
 
 
