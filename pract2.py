@@ -42,6 +42,8 @@ def Morze(word):
     return result
 frequency = 1000
 while True:
+    
+    
     cont = Morze(input().lower())
     for s in cont:
         for symbol in s:
